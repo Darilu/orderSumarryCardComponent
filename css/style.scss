@@ -1,0 +1,146 @@
+// font-family: 'Red Hat Display', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$background: hsl(225, 100%, 94%); //background geral
+$colorBtn:  hsl(245, 75%, 52%); //cor botao
+$backgroundApp: hsl(225, 100%, 98%); //fundo do botao musiquinha
+
+$text: hsl(224, 23%, 55%); // cor dos textos
+$teste1: hsl(223, 47%, 23%); // cor do change
+
+$hover: rgb(112, 101, 236);
+
+
+// -------------LAYOUT------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: $background;
+
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+
+#container {
+    // - Desktop: 1440px
+    // - Mobile: 375px    
+    main{
+        padding: 0 30px;
+    }
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 20px;
+    max-width: 375px;
+
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.1);
+    
+}
+
+.image-top {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+// -----------TIPOGRAFY-----------
+.text {
+    color: $text;
+}
+
+.link{
+    text-decoration: underline;
+    color:  $colorBtn;
+}
+
+.bold7{
+    font-weight: 700;
+}
+
+.bold9{
+    font-weight: 900;
+}
+
+h1, h2, h3, p, a, form{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+header > h1 {
+    margin-top: 25px;
+    color:black;
+    font-size: 1.4rem;
+}
+
+header > p {
+    margin: 15px 0;
+
+    font-size: 1em;
+    line-height: 25px;
+}
+#bloquinho {
+    margin-bottom: 15px;
+
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        text-align: start;
+    }
+    background-color: $backgroundApp;
+}
+// -----------BUTTONS-----------
+.btn{
+    margin: 15px 0;
+    width: 100%;
+    height: 3.2em;
+
+    border-radius: 10px;
+    background-color: $colorBtn;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0px 20px 20px rgba(	56, 41, 224,0.2);
+
+}
+
+.btn:hover {
+    background-color: $hover; 
+}
+
+.link:hover {
+    color: $hover;
+    text-decoration: none;
+}
+
+#cancelOrder{
+    color: &texto;
+    margin: 10px 0 30px 0;
+    display: block;   
+}
+
+#cancelOrder:hover {
+    color: black;
+}
+
+.borda {
+    border: 1px solid red;
+}
