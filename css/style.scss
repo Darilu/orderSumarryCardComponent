@@ -38,17 +38,30 @@ body{
 
 #container {
     // - Desktop: 1440px
-    // - Mobile: 375px    
+    // - Mobile: 375px  
+    
     main{
-        padding: 0 30px;
+        padding: 20px 40px;
     }
+
+    border: 1px solid rgba(0, 255, 115, 0.582);
+    
     background-color: white;
     border-radius: 20px;
-    margin: 0 20px;
-    max-width: 375px;
-
-    box-shadow: 0px 15px 40px rgba(0,0,0,0.1);
     
+    
+    
+    max-width: 430px;
+    
+
+    box-shadow: 0px 20px 15px rgba(	56, 41, 224,0.1);
+    
+}
+
+#content > div { //seleciona apenas os filhos diretos da div content
+    
+    margin: 30px 0;
+    border: 1px solid red;
 }
 
 .image-top {
@@ -80,35 +93,34 @@ h1, h2, h3, p, a, form{
     font-size: 0.9rem;
 }
 
-header > h1 {
-    margin-top: 25px;
+div > h1 {
     color:black;
     font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
-header > p {
-    margin: 15px 0;
+div > p {
 
     font-size: 1em;
     line-height: 25px;
 }
 #bloquinho {
-    margin-bottom: 15px;
 
     border-radius: 10px;
     padding: 15px;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 3fr 1fr;
     justify-content: space-between;
     align-items: center;
+
     p{
         text-align: start;
     }
+        
     background-color: $backgroundApp;
 }
 // -----------BUTTONS-----------
 .btn{
-    margin: 15px 0;
     width: 100%;
     height: 3.2em;
 
@@ -133,7 +145,6 @@ header > p {
 
 #cancelOrder{
     color: &texto;
-    margin: 10px 0 30px 0;
     display: block;   
 }
 
@@ -144,3 +155,4 @@ header > p {
 .borda {
     border: 1px solid red;
 }
+
