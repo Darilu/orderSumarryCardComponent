@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://darilu.github.io/htmlCssProject/?]
+- Solution URL: [https://darilu.github.io/orderSumarryCardComponent/]
 
 ## My process
 
